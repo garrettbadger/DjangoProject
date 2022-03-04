@@ -18,7 +18,7 @@
         <input type="int" name="amount" placeholder="$">
         <input type="submit" value="Add Bank Account">
         {% if bank_accounts != 'Null' %}
-        <h3>Total {{bank_accounts[-1].content}}</h3>
+        <h3>Total {{bank_accounts.content}}</h3>
         {% endif %}
     </form>
 
