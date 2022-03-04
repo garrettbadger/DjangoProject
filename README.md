@@ -7,13 +7,13 @@ python installed on your machine and then run 'py manage.py runserver'. Then you
 page of the app.
 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+
+[Software Demo Video](https://youtu.be/39WXGD1jQqw)
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them.  Also describe what is dynamically created on each page.}
+Currently the app only has one page as it is still in progress. The current page is where you input an integer as the amount you want to deposit or withdraw from your account and then it will display your transactions in a list.
 
 # Development Environment
 
