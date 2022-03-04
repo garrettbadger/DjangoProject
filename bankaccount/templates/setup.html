@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup</title>
+</head> -->
+<body>
+    <h1>This is your account ledger.</h1>
+
+    <form action="/addBankAccount/" method="post">{% csrf_token %}
+        <h2>What are you doing?</h2>
+        <input type="radio" id="deposit", name="changing_funds" value="Deposit">
+        <label for="deposit">Deposit</label>
+        <input type="radio" id="withdraw", name="changing_funds" value="Withdraw">
+        <label for="deposit">Withdraw</label>
+        <input type="int" name="amount" placeholder="$">
+        <input type="submit" value="Add Bank Account">
+        {% if bank_accounts != 'Null' %}
+        <h3>Total {{bank_accounts[-1].content}}</h3>
+        {% endif %}
+    </form>
+
+    <ul>
+        {% for i in bank_accounts %}
+        <li>{{i.content}}</li>
+        
+        {% endfor %}
+    </ul>
+</body>
+</html>
